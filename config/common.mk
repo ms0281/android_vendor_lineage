@@ -155,6 +155,10 @@ PRODUCT_PACKAGES += \
     ssh-keygen \
     start-ssh
 
+# Priv-app permissions
+PRODUCT_COPY_FILES += \
+    vendor/lineage/prebuilt/common/etc/init/smartcharge-init.rc:$(TARGET_COPY_OUT_SYSTEM)/etc/init/smartcharge-init.rc
+
 # rsync
 PRODUCT_PACKAGES += \
     rsync
